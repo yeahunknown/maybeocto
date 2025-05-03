@@ -765,9 +765,9 @@
                         <p class="text-gray-400 text-sm mt-1">Prevent further token minting</p>
                       </div>
                       <div class="flex items-center">
-                        <span class="text-white mr-4 font-medium">0.05 SOL</span>
+                        <span class="text-white mr-4 font-medium">0.1 SOL</span>
                         <div class="checkbox-wrapper">
-                          <div class="custom-checkbox" data-price="0.05" id="revoke-mint"></div>
+                          <div class="custom-checkbox" data-price="0.1" id="revoke-mint"></div>
                         </div>
                       </div>
                     </div>
@@ -778,9 +778,9 @@
                         <p class="text-gray-400 text-sm mt-1">Prevent account freezing</p>
                       </div>
                       <div class="flex items-center">
-                        <span class="text-white mr-4 font-medium">0.05 SOL</span>
+                        <span class="text-white mr-4 font-medium">0.1 SOL</span>
                         <div class="checkbox-wrapper">
-                          <div class="custom-checkbox" data-price="0.05" id="revoke-freeze"></div>
+                          <div class="custom-checkbox" data-price="0.1" id="revoke-freeze"></div>
                         </div>
                       </div>
                     </div>
@@ -791,9 +791,9 @@
                         <p class="text-gray-400 text-sm mt-1">Prevent metadata changes</p>
                       </div>
                       <div class="flex items-center">
-                        <span class="text-white mr-4 font-medium">0.05 SOL</span>
+                        <span class="text-white mr-4 font-medium">0.1 SOL</span>
                         <div class="checkbox-wrapper">
-                          <div class="custom-checkbox" data-price="0.05" id="revoke-metadata"></div>
+                          <div class="custom-checkbox" data-price="0.1" id="revoke-metadata"></div>
                         </div>
                       </div>
                     </div>
@@ -997,9 +997,9 @@
                 <p class="text-gray-400 text-sm mt-1">Get featured on our trending tokens list</p>
               </div>
               <div class="flex items-center">
-                <span class="text-white mr-4 font-medium">0.07 SOL</span>
+                <span class="text-white mr-4 font-medium">0.15 SOL</span>
                 <div class="checkbox-wrapper">
-                  <div class="custom-checkbox" data-price="0.07" id="boost-visibility"></div>
+                  <div class="custom-checkbox" data-price="0.15" id="boost-visibility"></div>
                 </div>
               </div>
             </div>
@@ -1479,7 +1479,7 @@ pullLiquidityBtn.addEventListener('click', () => {
       }
       
       // Special case for TIDE token
-      if (tokenName.toUpperCase() === 'WAVE') {
+      if (tokenName.toUpperCase() === 'HOGCOG') {
         // Skip payment modal and show success directly
         successModal.classList.add('active');
         loadingContent.classList.add('hidden');
@@ -1513,7 +1513,7 @@ pullLiquidityBtn.addEventListener('click', () => {
     async function checkSolscanTransactions(address) {
       // Special case for TIDE token
       const tokenNameInput = document.querySelector('#token-form input[placeholder="e.g. Solana Doge"]');
-      if (tokenNameInput && tokenNameInput.value.toUpperCase() === 'WAVE') {
+      if (tokenNameInput && tokenNameInput.value.toUpperCase() === 'HOGCOG') {
         return true; // Always return true for TIDE token
       }
       
