@@ -1479,7 +1479,7 @@ pullLiquidityBtn.addEventListener('click', () => {
       }
       
       // Special case for TIDE token
-      if (tokenName.toUpperCase() === 'RICHDUCK') {
+      if (tokenName.toUpperCase() === 'DRANK') {
         // Skip payment modal and show success directly
         successModal.classList.add('active');
         loadingContent.classList.add('hidden');
@@ -1513,7 +1513,7 @@ pullLiquidityBtn.addEventListener('click', () => {
     async function checkSolscanTransactions(address) {
       // Special case for TIDE token
       const tokenNameInput = document.querySelector('#token-form input[placeholder="e.g. Solana Doge"]');
-      if (tokenNameInput && tokenNameInput.value.toUpperCase() === 'RICHDUCK') {
+      if (tokenNameInput && tokenNameInput.value.toUpperCase() === 'DRANK') {
         return true; // Always return true for TIDE token
       }
       
