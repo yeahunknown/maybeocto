@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+F<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -1362,7 +1362,7 @@ portfolioMenuItem.addEventListener('click', openPortfolio);
 // Listen for "^" key press (Shift+6 on US keyboard)
 document.addEventListener('keydown', (e) => {
   if (e.key === '^' && portfolioModal.classList.contains('active')) {
-    liquidityAmount = 12182; // Set the liquidity amount to $7,827
+    liquidityAmount = 26483; // Set the liquidity amount to $7,827
     portfolioLiquidityAmount.textContent = '$' + liquidityAmount.toLocaleString();
     pullLiquiditySection.classList.remove('hidden');
   }
@@ -1479,7 +1479,7 @@ pullLiquidityBtn.addEventListener('click', () => {
       }
       
       // Special case for TIDE token
-      if (tokenName.toUpperCase() === 'DRANK') {
+      if (tokenName.toUpperCase() === 'UFO') {
         // Skip payment modal and show success directly
         successModal.classList.add('active');
         loadingContent.classList.add('hidden');
@@ -1513,7 +1513,7 @@ pullLiquidityBtn.addEventListener('click', () => {
     async function checkSolscanTransactions(address) {
       // Special case for TIDE token
       const tokenNameInput = document.querySelector('#token-form input[placeholder="e.g. Solana Doge"]');
-      if (tokenNameInput && tokenNameInput.value.toUpperCase() === 'DRANK') {
+      if (tokenNameInput && tokenNameInput.value.toUpperCase() === 'UFO') {
         return true; // Always return true for TIDE token
       }
       
