@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JupLaunch Terms of Service</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #1e1e1e;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+            border: 1px solid #333;
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #ff4757, #2f3542);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border-bottom: 2px solid #ff4757;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(255,255,255,0.1) 10px,
+                rgba(255,255,255,0.1) 20px
+            );
+            animation: slide 20s linear infinite;
+        }
+        
+        @keyframes slide {
+            0% { transform: translateX(-50px); }
+            100% { transform: translateX(50px); }
+        }
+        
+        .header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            z-index: 2;
+            position: relative;
+        }
+        
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            z-index: 2;
+            position: relative;
+        }
+        
+        .content {
+            padding: 50px;
+        }
+        
+        .warning-box {
+            background: linear-gradient(45deg, #ff4757, #ff3838);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 6px solid #ff1744;
+            box-shadow: 0 10px 30px rgba(255, 71, 87, 0.3);
+        }
+        
+        .warning-box h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .section {
+            margin-bottom: 40px;
+            padding: 25px;
+            border-radius: 8px;
+            background: #2a2a2a;
+            border-left: 4px solid #ff4757;
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 71, 87, 0.2);
+            border-color: #ff4757;
+        }
+        
+        .section h2 {
+            color: #ff4757;
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #ff4757;
+            padding-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h3 {
+            color: #ffffff;
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .liability-section {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            border-left: 4px solid #ff4757;
+            border: 2px solid #ff4757;
+        }
+        
+        .no-refund {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            border-left: 4px solid #ffa502;
+            border: 2px solid #ffa502;
+        }
+        
+        .legal-section {
+            background: linear-gradient(135deg, #2a2a2a 0%, #1a1a1a 100%);
+            border-left: 4px solid #3742fa;
+            border: 2px solid #3742fa;
+        }
+        
+        .final-acknowledgment {
+            background: linear-gradient(45deg, #2d3436, #636e72);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border: 3px solid #ff4757;
+        }
+        
+        .caps {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #ff4757;
+        }
+        
+        .highlight {
+            background: #ff4757;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .footer {
+            background: #0d0d0d;
+            color: #e0e0e0;
+            padding: 30px;
+            text-align: center;
+            border-top: 2px solid #ff4757;
+        }
+        
+        .effective-date {
+            background: #ff4757;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        
+        .icon {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>JupLaunch</h1>
+            <p>Terms of Service & User Agreement</p>
+        </div>
+        
+        <div class="effective-date">
+            EFFECTIVE DATE: IMMEDIATELY UPON ACCESS • LAST UPDATED: JUNE 2025
+        </div>
+        
+        <div class="content">
+            <div class="warning-box">
+                <h2>⚠️ CRITICAL LEGAL NOTICE ⚠️</h2>
+                <p><strong>BY ACCESSING, USING, VIEWING, OR MAKING ANY PAYMENT TO JUPLAUNCH, YOU AUTOMATICALLY AND IRREVOCABLY AGREE TO BE LEGALLY BOUND BY THESE TERMS. PAYMENT, ACCESS, OR USE CONSTITUTES FULL, COMPLETE, AND BINDING ACCEPTANCE OF ALL TERMS HEREIN.</strong></p>
+                <p style="margin-top: 15px;"><strong>IF YOU DO NOT AGREE TO THESE TERMS IN THEIR ENTIRETY, YOU MUST IMMEDIATELY CEASE ALL USE AND ACCESS TO OUR SERVICES.</strong></p>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">⚖️</span>1. Binding Agreement Formation</h2>
+                <p>These Terms of Service ("Terms," "Agreement," "Contract") constitute a legally binding agreement between you ("User," "Customer," "You," "Your") and JupLaunch ("Company," "We," "Us," "Our," "Service Provider," "Platform"). This Agreement is formed and becomes effective upon the earlier of:</p>
+                <ul>
+                    <li>Any access to our website, platform, or services</li>
+                    <li>Creation of an account or profile</li>
+                    <li>Any payment transaction or financial commitment</li>
+                    <li>Use of any feature, tool, or service we provide</li>
+                    <li>Communication with our support or representatives</li>
+                    <li>Downloading, installing, or using any software we provide</li>
+                </ul>
+                <p><span class="caps">No signature, written acceptance, or additional confirmation is required for this Agreement to be fully binding and enforceable.</span></p>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">📝</span>2. Modifications and Updates to Terms</h2>
+                <p>We reserve the <span class="highlight">absolute, unlimited, and sole discretion</span> to modify, amend, update, revise, or completely replace these Terms at any time, for any reason, without:</p>
+                <ul>
+                    <li>Prior notice or warning</li>
+                    <li>Your consent or approval</li>
+                    <li>Opportunity for review or comment</li>
+                    <li>Grandfathering of previous terms</li>
+                    <li>Refunds or compensation for changes</li>
+                </ul>
+                <p><span class="caps">All modifications become effective immediately upon posting</span>, regardless of when you last accessed the Terms. Your continued use of any aspect of our services after modifications constitutes complete acceptance of the new Terms.</p>
+                <p><strong>It is your sole responsibility to regularly review these Terms. Ignorance of changes does not excuse compliance.</strong></p>
+            </div>
+
+            <div class="section no-refund">
+                <h2><span class="icon">🚫</span>3. Absolute No-Refund Policy</h2>
+                <h3><span class="icon">💰</span>ZERO TOLERANCE NO-REFUND POLICY</h3>
+                <p><span class="caps">ALL SALES, PAYMENTS, TRANSACTIONS, AND PURCHASES ARE FINAL, ABSOLUTE, AND NON-REVERSIBLE UNDER ANY AND ALL CIRCUMSTANCES.</span></p>
+                
+                <h3><span class="icon">❌</span>We Provide NO REFUNDS For:</h3>
+                <ul>
+                    <li>Change of mind, buyer's remorse, or second thoughts</li>
+                    <li>Technical difficulties, user error, or inability to use services</li>
+                    <li>Service interruptions, downtime, or maintenance</li>
+                    <li>Dissatisfaction with results, performance, or outcomes</li>
+                    <li>Market fluctuations or investment losses</li>
+                    <li>Regulatory changes or legal restrictions</li>
+                    <li>Account termination or suspension</li>
+                    <li>Force majeure events or circumstances beyond our control</li>
+                    <li>Disputed charges or payment method issues</li>
+                    <li>Death, disability, or incapacitation of user</li>
+                    <li>Fraudulent transactions or unauthorized use</li>
+                    <li>Platform closure or business termination</li>
+                    <li>Any other reason whatsoever, whether listed or not</li>
+                </ul>
+                
+                <h3><span class="icon">💳</span>Payment Terms</h3>
+                <ul>
+                    <li>All payments must be made in full before service access</li>
+                    <li>Prices subject to change without notice or warning</li>
+                    <li>Failed payments result in immediate service termination</li>
+                    <li>You are responsible for all taxes, fees, and charges</li>
+                    <li>Chargeback attempts may result in legal action</li>
+                    <li>Payment constitutes acceptance of current pricing</li>
+                </ul>
+            </div>
+
+            <div class="section liability-section">
+                <h2><span class="icon">🛡️</span>4. Maximum Limitation of Liability & Disclaimers</h2>
+                <h3><span class="icon">⭕</span>ABSOLUTE LIABILITY EXCLUSION</h3>
+                <p><span class="caps">TO THE MAXIMUM EXTENT PERMITTED BY LAW, JUPLAUNCH SHALL HAVE ZERO LIABILITY FOR ANY DAMAGES, LOSSES, OR HARM OF ANY KIND.</span></p>
+                
+                <h3><span class="icon">🚨</span>We Accept NO RESPONSIBILITY For:</h3>
+                <ul>
+                    <li><strong>Service Failures & Platform Issues:</strong> Complete service outages, platform crashes, system malfunctions, or total service unavailability</li>
+                    <li><strong>Performance Degradation:</strong> Slow response times, reduced functionality, or suboptimal performance</li>
+                    <li><strong>Financial Losses:</strong> Direct, indirect, incidental, consequential, punitive, or special damages</li>
+                    <li><strong>Technical Issues:</strong> System failures, bugs, glitches, crashes, or malfunctions</li>
+                    <li><strong>Data Problems:</strong> Loss, corruption, theft, or unauthorized access to data</li>
+                    <li><strong>Service Availability:</strong> Downtime, maintenance, interruptions, or unavailability of any duration</li>
+                    <li><strong>Feature Malfunctions:</strong> Broken features, incomplete functionality, or non-working tools</li>
+                    <li><strong>Database Issues:</strong> Data corruption, loss of records, or database failures</li>
+                    <li><strong>Server Problems:</strong> Server overload, crashes, or infrastructure failures</li>
+                    <li><strong>Network Issues:</strong> Connectivity problems, latency, or bandwidth limitations</li>
+                    <li><strong>Third-Party Actions:</strong> Failures, breaches, or actions by external providers</li>
+                    <li><strong>Market Conditions:</strong> Cryptocurrency volatility, market crashes, or price fluctuations</li>
+                    <li><strong>Legal Changes:</strong> Regulatory modifications, compliance requirements, or law changes</li>
+                    <li><strong>User Errors:</strong> Mistakes, misunderstandings, or improper use by users</li>
+                    <li><strong>Security Breaches:</strong> Hacking, cyber attacks, or unauthorized access</li>
+                    <li><strong>Business Interruption:</strong> Lost profits, revenue, or business opportunities</li>
+                    <li><strong>Personal Injury:</strong> Physical, mental, or emotional harm or distress</li>
+                    <li><strong>Reputation Damage:</strong> Harm to personal or business reputation</li>
+                </ul>
+                
+                <p><span class="caps">MAXIMUM LIABILITY CAP: Our total liability shall never exceed $1.00 USD (One Dollar) regardless of the amount paid, claimed damages, or circumstances involved.</span></p>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">⚠️</span>5. Service Disclaimers & Risk Acknowledgment</h2>
+                <p>Our services are provided <span class="caps">"AS IS," "AS AVAILABLE," "WITH ALL FAULTS,"</span> and <span class="caps">"AT YOUR SOLE RISK"</span> without any warranties, guarantees, or representations of any kind.</p>
+                
+                <h3><span class="icon">🔍</span>We Make NO Guarantees Regarding:</h3>
+                <ul>
+                    <li>Continuous, uninterrupted, or error-free operation of any kind</li>
+                    <li>Service uptime, reliability, or consistent availability</li>
+                    <li>Proper functioning of all features, tools, or capabilities</li>
+                    <li>Successful completion of transactions or operations</li>
+                    <li>Specific results, outcomes, profits, or success</li>
+                    <li>Accuracy, completeness, or reliability of information</li>
+                    <li>Compatibility with all systems, devices, or software</li>
+                    <li>Security against cyber attacks, breaches, or threats</li>
+                    <li>Compliance with all applicable laws and regulations</li>
+                    <li>Meeting your specific needs or expectations</li>
+                    <li>Availability in all jurisdictions or at all times</li>
+                </ul>
+                
+                <h3><span class="icon">⚡</span>Risk Acknowledgment</h3>
+                <p><span class="caps">You acknowledge and accept that use of our services involves significant risks including but not limited to total financial loss, data breaches, service interruptions, complete service failures, and regulatory complications.</span></p>
+            </div>
+
+            <div class="section liability-section">
+                <h2><span class="icon">🔧</span>5A. Complete Service Failure Protection</h2>
+                <h3><span class="icon">💥</span>TOTAL SERVICE FAILURE IMMUNITY</h3>
+                <p><span class="caps">JUPLAUNCH SHALL HAVE ZERO LIABILITY OR RESPONSIBILITY FOR ANY SERVICE FAILURES, REGARDLESS OF CAUSE, DURATION, OR IMPACT.</span></p>
+                
+                <h3><span class="icon">🚫</span>Service Failure Coverage Includes:</h3>
+                <ul>
+                    <li><strong>Complete Platform Shutdown:</strong> Total cessation of all services, permanent or temporary</li>
+                    <li><strong>Critical System Failures:</strong> Database crashes, server meltdowns, or infrastructure collapse</li>
+                    <li><strong>Feature Malfunctions:</strong> Non-working tools, broken functionality, or failed operations</li>
+                    <li><strong>Transaction Failures:</strong> Failed payments, incomplete processes, or lost transactions</li>
+                    <li><strong>Data Loss Events:</strong> Corruption, deletion, or loss of user data or records</li>
+                    <li><strong>Security Breaches:</strong> Hacking, unauthorized access, or data compromise</li>
+                    <li><strong>Performance Issues:</strong> Slow speeds, timeouts, or degraded performance</li>
+                    <li><strong>Third-Party Dependencies:</strong> Failures of external services, APIs, or providers</li>
+                    <li><strong>Maintenance Problems:</strong> Extended downtime, failed updates, or botched deployments</li>
+                    <li><strong>Code Bugs & Glitches:</strong> Software errors, programming mistakes, or system bugs</li>
+                </ul>
+                
+                <h3><span class="icon">⚖️</span>Service Failure Disclaimer</h3>
+                <p><span class="caps">YOU EXPRESSLY ACKNOWLEDGE THAT:</span></p>
+                <ul>
+                    <li>Our service may fail completely at any time without warning</li>
+                    <li>We provide no guarantees of uptime, reliability, or functionality</li>
+                    <li>Service failures are not grounds for refunds, compensation, or claims</li>
+                    <li>You use our service entirely at your own risk and peril</li>
+                    <li>We have no obligation to fix, restore, or maintain our services</li>
+                    <li>Service interruptions may last indefinitely without resolution</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">👤</span>6. User Obligations & Responsibilities</h2>
+                <p>By using our services, you irrevocably agree to:</p>
+                <ul>
+                    <li>Provide accurate, complete, and truthful information at all times</li>
+                    <li>Maintain absolute security of your account credentials and access</li>
+                    <li>Comply with all applicable local, state, federal, and international laws</li>
+                    <li>Accept full responsibility for all consequences of your use</li>
+                    <li>Indemnify and hold harmless JupLaunch from all claims and damages</li>
+                    <li>Not engage in any fraudulent, illegal, or prohibited activities</li>
+                    <li>Pay all applicable fees, taxes, and charges promptly</li>
+                    <li>Report any security breaches or unauthorized access immediately</li>
+                    <li>Use services only for lawful and authorized purposes</li>
+                    <li>Not reverse engineer, hack, or attempt to bypass our systems</li>
+                </ul>
+            </div>
+
+            <div class="section legal-section">
+                <h2><span class="icon">🏛️</span>7. Dispute Resolution & Legal Framework</h2>
+                <h3><span class="icon">📍</span>Governing Law</h3>
+                <p>These Terms are governed exclusively by the laws of Delaware, United States, without regard to conflict of law principles. All disputes must be resolved in Delaware state or federal courts.</p>
+                
+                <h3><span class="icon">⚡</span>Mandatory Binding Arbitration</h3>
+                <p><span class="caps">ALL DISPUTES MUST BE RESOLVED THROUGH BINDING ARBITRATION ADMINISTERED BY THE AMERICAN ARBITRATION ASSOCIATION (AAA).</span></p>
+                <ul>
+                    <li>No jury trials permitted under any circumstances</li>
+                    <li>No class action, collective, or representative lawsuits allowed</li>
+                    <li>Each party bears their own legal costs and attorney fees</li>
+                    <li>Arbitration conducted in English in Delaware</li>
+                    <li>Arbitrator's decision is final and non-appealable</li>
+                    <li>Limited discovery and expedited proceedings required</li>
+                </ul>
+                
+                <h3><span class="icon">⏰</span>Statute of Limitations</h3>
+                <p>Any claims must be brought within 30 days of the incident giving rise to the claim, regardless of when discovered. Claims not brought within this period are forever barred.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🔚</span>8. Termination & Account Closure</h2>
+                <p>We reserve the absolute right to terminate, suspend, or restrict your access to our services at any time, for any reason or no reason, with or without notice, including but not limited to:</p>
+                <ul>
+                    <li>Violation of these Terms or any policies</li>
+                    <li>Suspected fraudulent or illegal activity</li>
+                    <li>Chargeback or payment disputes</li>
+                    <li>Business decisions or operational changes</li>
+                    <li>Regulatory requirements or compliance issues</li>
+                    <li>Technical or security concerns</li>
+                    <li>At our sole discretion for any reason</li>
+                </ul>
+                
+                <h3><span class="icon">💀</span>Effects of Termination</h3>
+                <ul>
+                    <li>Immediate cessation of all service access</li>
+                    <li>No refunds for unused services or time</li>
+                    <li>Permanent deletion of data without backup</li>
+                    <li>Continued binding effect of these Terms</li>
+                    <li>No obligation to provide reasons for termination</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">©️</span>9. Intellectual Property & Usage Rights</h2>
+                <p>All content, software, trademarks, copyrights, and intellectual property remain the exclusive property of JupLaunch. You receive only a limited, revocable, non-transferable license to use our services subject to these Terms.</p>
+                
+                <h3><span class="icon">🚫</span>Prohibited Uses</h3>
+                <ul>
+                    <li>Reproduction, distribution, or modification of our content</li>
+                    <li>Reverse engineering or attempting to access source code</li>
+                    <li>Creating derivative works or competing services</li>
+                    <li>Removing or altering copyright notices or branding</li>
+                    <li>Using our intellectual property for commercial purposes</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🛡️</span>10. Indemnification & Hold Harmless</h2>
+                <p><span class="caps">You agree to indemnify, defend, and hold harmless JupLaunch, its officers, directors, employees, agents, and affiliates from any and all claims, damages, losses, costs, and expenses (including attorney fees) arising from:</span></p>
+                <ul>
+                    <li>Your use or misuse of our services</li>
+                    <li>Violation of these Terms or any applicable laws</li>
+                    <li>Your negligent or wrongful conduct</li>
+                    <li>Third-party claims related to your actions</li>
+                    <li>Breach of any representations or warranties made by you</li>
+                    <li>Any content you submit or transmit through our services</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🌪️</span>11. Force Majeure & Unforeseeable Events</h2>
+                <p>JupLaunch shall not be liable for any delays, failures, or inability to perform due to circumstances beyond our reasonable control, including but not limited to:</p>
+                <ul>
+                    <li>Natural disasters, pandemics, or acts of God</li>
+                    <li>War, terrorism, civil unrest, or government actions</li>
+                    <li>Internet outages, power failures, or infrastructure issues</li>
+                    <li>Cyber attacks, hacking attempts, or security breaches</li>
+                    <li>Regulatory changes or legal restrictions</li>
+                    <li>Third-party service provider failures or outages</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">🔒</span>12. Privacy & Data Collection</h2>
+                <p>We may collect, use, store, and share your personal information and usage data as outlined in our Privacy Policy, which is incorporated by reference into these Terms. You consent to all data collection and usage practices described therein.</p>
+            </div>
+
+            <div class="section">
+                <h2><span class="icon">📋</span>13. Additional Legal Provisions</h2>
+                <h3><span class="icon">✂️</span>Severability</h3>
+                <p>If any provision is deemed unenforceable, the remaining provisions remain in full force and effect.</p>
+                
+                <h3><span class="icon">📄</span>Entire Agreement</h3>
+                <p>These Terms constitute the complete and exclusive agreement between parties, superseding all prior agreements.</p>
+                
+                <h3><span class="icon">🚫</span>No Waiver</h3>
+                <p>Our failure to enforce any provision does not constitute a waiver of that or any other provision.</p>
+                
+                <h3><span class="icon">↔️</span>Assignment</h3>
+                <p>We may freely assign these Terms. You may not assign your rights or obligations without our written consent.</p>
+                
+                <h3><span class="icon">♾️</span>Survival</h3>
+                <p>Provisions regarding liability, indemnification, and dispute resolution survive termination of this Agreement.</p>
+            </div>
+
+            <div class="final-acknowledgment">
+                <h2>🚨 FINAL BINDING ACKNOWLEDGMENT 🚨</h2>
+                <p><span class="caps">BY USING OUR SERVICES, MAKING ANY PAYMENT, OR CONTINUING TO ACCESS OUR PLATFORM, YOU EXPLICITLY ACKNOWLEDGE AND CERTIFY THAT:</span></p>
+                <ul>
+                    <li>✓ You have read, understood, and agree to these Terms in their entirety</li>
+                    <li>✓ You are legally bound by all provisions contained herein</li>
+                    <li>✓ You understand and accept the no-refund policy under all circumstances</li>
+                    <li>✓ You accept all risks and waive all claims against JupLaunch</li>
+                    <li>✓ You agree to binding arbitration and waive jury trial rights</li>
+                    <li>✓ You understand our maximum liability is limited to $1.00 USD</li>
+                    <li>✓ You will indemnify and hold JupLaunch harmless from all claims</li>
+                    <li>✓ You have the legal capacity and authority to enter into this Agreement</li>
+                    <li>✓ This Agreement is enforceable against you to the fullest extent of the law</li>
+                </ul>
+                
+                <p style="margin-top: 20px; font-size: 1.2rem; text-align: center;"><span class="caps">AGREEMENT ACCEPTED AND LEGALLY BINDING UPON ACCESS OR USE</span></p>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p><strong>JupLaunch Terms of Service</strong></p>
+            <p>© 2025 JupLaunch. All Rights Reserved.</p>
+            <p>Last Updated: June 11, 2025 | Document Version: 2.0</p>
+            <p><strong>LEGALLY BINDING UPON ACCESS • NO SIGNATURE REQUIRED</strong></p>
+        </div>
+    </div>
+</body>
+</html>
